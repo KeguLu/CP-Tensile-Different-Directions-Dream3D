@@ -1,0 +1,43 @@
+lattice: cI
+mechanical:
+  output: [F, P, F_e, F_p, L_p, O]
+  elastic:
+    type: Hooke
+
+    references:
+      - G.N. Kamm and G.A. Alers,
+        Journal of Applied Physics 35:327-330, 1964,
+        https://doi.org/10.1063/1.1713309,
+        fit to Tab. I (T_min=100K, T_max=300K)
+      - D. Gerlich and E.S. Fisher,
+        Journal of Physics and Chemistry of Solids 30:1197-1205, 1969
+        https://doi.org/10.1016/0022-3697(69)90377-1,
+        fit to Tab. 2 (T_min=293K, T_max=900K)
+
+    C_11: 233e+9
+    C_12: 135e+9
+    C_44: 128e+9
+    
+  plastic:
+    type: phenopowerlaw
+
+    references:
+      - W.F. Hosford et al.,
+        Acta Metallurgica 8(3):187-199, 1960,
+        https://doi.org/10.1016/0001-6160(60)90127-9,
+        fitted from Fig. 5
+      - U.F. Kocks,
+        Metallurgical and Materials Transactions B 1:1121–1143, 1970,
+        https://doi.org/10.1007/BF02900224
+
+    output: [xi_sl, gamma_sl]
+
+    N_sl: [12]
+
+    n_sl: 60
+    a_sl: 1.94
+    h_0_sl-sl: 2.39e+9
+    xi_0_sl: [94.6e+6]
+    xi_inf_sl: [241e+6]
+    h_sl-sl: [1, 1.4, 1, 1.4, 1.4, 1.4, 1.4]
+    dot_gamma_0_sl: 1.0e-6
