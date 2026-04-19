@@ -38,7 +38,7 @@ Lu, K., Zhou, Y., Solhjoo, S., Naghinejad, M., van Tijum, R., Pei, Y. T., & Post
 To run the workflow, you need the following inputs:
 
 ### 1. Dream3D RVE file
-A Dream3D file containing the RVE geometry.
+A Dream3D file containing the RVE geometry and orientaions of each grids.
 
 ### 2. Grid size of the RVE
 The number of grid cells in the three spatial directions:
