@@ -10,7 +10,7 @@ The script rotates the RVE and the corresponding grain orientations, runs uniaxi
 
 For each loading angle relative to the rolling direction, the script:
 
-1. loads the RVE geometry from a Dream3D file,
+1. loads the RVE geometry from a Dream3D file (The "RealRVE_1_1.dream3d.zip" needs to be unzipped in this repository),
 2. mirrors and crops the geometry to construct a larger master domain,
 3. rotates the geometry to the target angle,
 4. rotates the crystallographic orientations consistently,
