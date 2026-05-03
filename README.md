@@ -62,7 +62,7 @@ The constitutive parameters attached to this workflow were calibrated using **pa
 
 ## Version note
 
-The code below is based on **DAMASK 3.0.0**.
+The code below is based on **DAMASK 3.0.0a7**.
 
 If you use a newer DAMASK version, the parts related to:
 
