@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a Python workflow for performing crystal plasticity (CP) simulations in **DAMASK 3.0.0** to obtain **direction-dependent stress–strain curves** and **Lankford coefficients (*r*-values)** from a **Dream3D-generated representative volume element (RVE)**. The loading directions are defined with respect to the **rolling direction (RD)**.
+This repository provides a Python workflow for performing crystal plasticity (CP) simulations in **DAMASK 3.0.0a7** to obtain **direction-dependent stress–strain curves** and **Lankford coefficients (*r*-values)** from a **Dream3D-generated representative volume element (RVE)**. The loading directions are defined with respect to the **rolling direction (RD)**.
 
 The script rotates the RVE and the corresponding grain orientations, runs uniaxial tensile simulations for a series of in-plane angles, and writes the simulated results for all tested directions into a CSV table.
 
